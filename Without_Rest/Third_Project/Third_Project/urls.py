@@ -1,4 +1,4 @@
-"""First_Project URL Configuration
+"""Third_Project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.1/topics/http/urls/
@@ -15,12 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from testapp.views import EmployeeFirstViews, EmployeeSecondViews, EmployeeThirdViews, EmloyeeCBV
+from testapp.views import EmployeeCBV
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/',EmployeeFirstViews),
-    path('apijson/',EmployeeSecondViews),
-    path('apijsonresponse/',EmployeeThirdViews),
-    path('employeecbv', EmloyeeCBV.as_view()),
+    path('api/<int:id>', EmployeeCBV.as_view()),
 ]

@@ -34,3 +34,26 @@ def EmployeeThirdViews(request):
         'eaddr' : 'Mumbai'
     }
     return JsonResponse(emp_data)
+
+from django.views.generic import View
+
+class EmloyeeCBV(View):
+    def get(self, request, *agrs, **kwargs):
+        return JsonResponse({'msg':'This Resopnse from GET Method'})
+    
+    def post(self, request, *args, **kwargs):
+        return JsonResponse({'msg':'This Response from post Method'})
+
+    def put(self, request, *args, **kwargs):
+        return JsonResponse({'msg':'This Response from put Method'})
+    
+    def patch(self, request, *args, **kwargs):
+        return JsonResponse({'msg':'This Response from pacth Method'})
+    
+    def delete(self, request, *args, **kwargs):
+        return JsonResponse({'msg':'This Response from delete Method'})
+    
+    def Test(self, request, *args, **kwargs):
+        return JsonResponse({'msg':'This Response from Test Method'})
+
+
