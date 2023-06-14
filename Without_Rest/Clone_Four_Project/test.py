@@ -1,3 +1,4 @@
+import json
 import requests
 
 BASE_URL = 'http://localhost:8000/'
@@ -13,4 +14,37 @@ def get_resoure():
     print(data)
     # else:
     # print('somthing goes wrong!!')
-get_resoure()
+# get_resoure()
+
+def create_resource():
+    emp_dict = {
+        'eno' : 700,
+        'ename':'Parkash',
+        'esal':500000.0,
+        'eaddr' : 'Mumbai'
+    }
+    post_request = requests.post(BASE_URL+END_POINT, data = (emp_dict))
+
+    print(post_request.status_code)
+    # print(post_request.text) 
+    print(post_request.json())
+# create_resource()
+
+def Update_Resource():
+    id = input('Enter id:')
+    emp = {
+        'ename':'Washim akram',
+        'esal' : 500000.0
+    }
+    resp = requests.put(BASE_URL + END_POINT + id +'/' , data=json.dumps(emp))
+    put_request = resp.json()
+    print(put_request)
+
+# Update_Resource()
+
+def delete_resources():
+    id = input('Enter Id:')
+    resp = requests.delete(BASE_URL+END_POINT + id + '/')
+    r = resp.json()
+    print(r)
+delete_resources()

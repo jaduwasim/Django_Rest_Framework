@@ -1,0 +1,72 @@
+[
+{
+    "model": "testapp.employee",
+    "pk": 1,
+    "fields": {
+        "eno": 100,
+        "ename": "Sunny",
+        "esal": 1000.0,
+        "eaddr": "Mumbai"
+    }
+},
+{
+    "model": "testapp.employee",
+    "pk": 2,
+    "fields": {
+        "eno": 200,
+        "ename": "Bunny",
+        "esal": 2000.0,
+        "eaddr": "Banglor"
+    }
+},
+{
+    "model": "testapp.employee",
+    "pk": 3,
+    "fields": {
+        "eno": 300,
+        "ename": "Chinny",
+        "esal": 30000.0,
+        "eaddr": "Delhi"
+    }
+},
+{
+    "model": "testapp.employee",
+    "pk": 4,
+    "fields": {
+        "eno": 400,
+        "ename": "Vinny",
+        "esal": 40000.0,
+        "eaddr": "Hyderabad"
+    }
+},
+{
+    "model": "testapp.employee",
+    "pk": 5,
+    "fields": {
+        "eno": 500,
+        "ename": "ravi",
+        "esal": 50000.0,
+        "eaddr": "Mumbai"
+    }
+},
+{
+    "model": "testapp.employee",
+    "pk": 6,
+    "fields": {
+        "eno": 600,
+        "ename": "Mahesh Babu",
+        "esal": 500.0,
+        "eaddr": "Mumbai"
+    }
+},
+{
+    "model": "testapp.employee",
+    "pk": 7,
+    "fields": {
+        "eno": 700,
+        "ename": "Parkash",
+        "esal": 500000.0,
+        "eaddr": "Mumbai"
+    }
+}
+]
