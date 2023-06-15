@@ -19,16 +19,16 @@ def get_resoure():
 def create_resource():
     emp_dict = {
         'eno' : 700,
-        'ename':'Parkash',
+        'ename':'Ravi Teja',
         'esal':500000.0,
         'eaddr' : 'Mumbai'
     }
-    post_request = requests.post(BASE_URL+END_POINT, data = (emp_dict))
+    post_request = requests.post(BASE_URL+END_POINT, data = json.dumps(emp_dict))
 
     print(post_request.status_code)
     # print(post_request.text) 
     print(post_request.json())
-# create_resource()
+create_resource()
 
 def Update_Resource():
     id = input('Enter id:')
@@ -47,4 +47,4 @@ def delete_resources():
     resp = requests.delete(BASE_URL+END_POINT + id + '/')
     r = resp.json()
     print(r)
-delete_resources()
+# delete_resources()
