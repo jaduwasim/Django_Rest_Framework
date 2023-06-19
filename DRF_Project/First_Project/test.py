@@ -15,8 +15,8 @@ def get_resource(id=None):
     resp = requests.get(BASE_URL+END_POINT, data=json.dumps(emp))
     print(f'Status Code: {resp.status_code}')
     print(resp.json())
-# id = eval(input('Enter id or None:'))
-# get_resource(id)
+id = eval(input('Enter id or None:'))
+get_resource(id)
 
 def create_resource():
     emp_data ={
@@ -50,5 +50,5 @@ def delete_resource(id):
     req = requests.delete(BASE_URL + END_POINT , data=json.dumps(emp_data))
     print(f'Status Code: {req.status_code}')
     print(req.json())
-id = eval(input('Enter id:'))
-delete_resource(id)
+# id = eval(input('Enter id:'))
+# delete_resource(id)

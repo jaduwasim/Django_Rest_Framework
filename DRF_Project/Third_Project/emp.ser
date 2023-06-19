@@ -1,0 +1,12 @@
+[
+{
+    "model": "testapp.employee",
+    "pk": 1,
+    "fields": {
+        "eno": 100,
+        "ename": "Sunny",
+        "esal": 1000.0,
+        "eaddr": "Mumbai"
+    }
+}
+]
