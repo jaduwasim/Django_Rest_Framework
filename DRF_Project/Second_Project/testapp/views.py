@@ -22,8 +22,8 @@ class EmployeeCRUD(HttpResponseMixins, View):
         return Query
 
     def post(self, request, *args, **kwargs):
-        data = request.body
-        valid = is_json(data)
+        data = request.body 
+        valid = is_json(data) 
         if not valid :
             msg = {'msg':'Please Provide Data in JSON Foramt Only!'}
             json_string = JSONRenderer().render(msg)
